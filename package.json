@@ -1,0 +1,23 @@
+{
+  "name": "general-docs",
+  "version": "1.0.0",
+  "description": "The documentation for general.js",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jsdoc": "^3.5.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/experdot/general-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/experdot/general-docs/issues"
+  },
+  "homepage": "https://github.com/experdot/general-docs#readme"
+}
