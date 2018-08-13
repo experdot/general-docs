@@ -1,11 +1,12 @@
 {
   "name": "general-docs",
   "version": "1.0.0",
-  "description": "The documentation for general.js",
+  "description": "The documentation for general-engine",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "jsdoc": "^3.5.5"
+    "typedoc": "^0.11.1",
+    "typescript": "^3.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,8 +15,8 @@
     "type": "git",
     "url": "git+https://github.com/experdot/general-docs.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "experdot",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/experdot/general-docs/issues"
   },

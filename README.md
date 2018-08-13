@@ -1,2 +1,2 @@
 # general-docs
-The documentation for general.js
+The documentation for general-engine

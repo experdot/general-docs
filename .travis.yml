@@ -9,7 +9,7 @@ env:
   global:
     - Remote_Repository: github.com/experdot/general-docs.git
     - Deployment_Folder: repository_ghpages
-    - Source_Repository: github.com/experdot/General.JS.git
+    - Source_Repository: github.com/experdot/general-engine.git
     - Source_Folder: repository_source
 cache:
   directories:
@@ -25,8 +25,8 @@ script:
   # clone source code
   - git clone --depth=1 --branch=master https://${GitHubToken}@${Source_Repository} ${Source_Folder};
 
-  # jsdoc
-  - jsdoc ./${Source_Folder}/src/scripts/ -c conf.json -r
+  # typedoc
+  - typedoc --out ./out ./${Source_Folder}/src/scripts/Engine --target es6 --tsconfig ./${Source_Folder}/tsconfig.json
 
   # check if gh-pages branch exists (token is required if origin is private)
   - export BRANCH_EXISTS=$(git ls-remote --heads https://${GitHubToken}@${Remote_Repository} gh-pages)
