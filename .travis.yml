@@ -49,8 +49,8 @@ script:
   # move distributing files
   - mv ./out/* ${Deployment_Folder}
 
-  # move Jkell theme file
-  - mv ./_config.yml ${Deployment_Folder}
+  # move CNAME file
+  - mv ./CNAME ${Deployment_Folder}
 
 after_script:
   - if [ "$TRAVIS_EVENT_TYPE" = "push" ]; then
