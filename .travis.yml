@@ -52,6 +52,9 @@ script:
   # move CNAME file
   - mv ./CNAME ${Deployment_Folder}
 
+    # move .nojekyll file
+  - mv ./.nojekyll ${Deployment_Folder}
+
 after_script:
   - if [ "$TRAVIS_EVENT_TYPE" = "push" ]; then
       cd ${Deployment_Folder};
