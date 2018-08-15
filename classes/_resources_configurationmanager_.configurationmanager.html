@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ResourceManager | general-engine</title>
+	<title>ConfigurationManager | general-engine</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_resources_resourcemanager_.html">&quot;Resources/ResourceManager&quot;</a>
+					<a href="../modules/_resources_configurationmanager_.html">&quot;Resources/ConfigurationManager&quot;</a>
 				</li>
 				<li>
-					<a href="_resources_resourcemanager_.resourcemanager.html">ResourceManager</a>
+					<a href="_resources_configurationmanager_.configurationmanager.html">ConfigurationManager</a>
 				</li>
 			</ul>
-			<h1>Class ResourceManager</h1>
+			<h1>Class ConfigurationManager</h1>
 		</div>
 	</div>
 </header>
@@ -73,13 +73,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ResourceManager</span>
+						<a href="_resources_resourcemanager_.resourcemanager.html" class="tsd-signature-type">ResourceManager</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="_resources_configurationmanager_.configurationmanager.html" class="tsd-signature-type">ConfigurationManager</a>
-							</li>
-							<li>
-								<a href="_resources_cultureresourcemanager_.cultureresourcemanager.html" class="tsd-signature-type">CultureResourceManager</a>
+								<span class="target">ConfigurationManager</span>
 							</li>
 						</ul>
 					</li>
@@ -92,24 +89,26 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_resources_resourcemanager_.resourcemanager.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_resources_configurationmanager_.configurationmanager.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_resources_resourcemanager_.resourcemanager.html#preload" class="tsd-kind-icon">preload</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_resources_resourcemanager_.resourcemanager.html#sets" class="tsd-kind-icon">sets</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_resources_configurationmanager_.configurationmanager.html#preload" class="tsd-kind-icon">preload</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_resources_configurationmanager_.configurationmanager.html#sets" class="tsd-kind-icon">sets</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_resources_configurationmanager_.configurationmanager.html#target" class="tsd-kind-icon">target</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_resources_configurationmanager_.configurationmanager.html#url" class="tsd-kind-icon">url</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_resources_resourcemanager_.resourcemanager.html#add" class="tsd-kind-icon">add</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_resources_resourcemanager_.resourcemanager.html#assign" class="tsd-kind-icon">assign</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_resources_resourcemanager_.resourcemanager.html#clear" class="tsd-kind-icon">clear</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_resources_resourcemanager_.resourcemanager.html#load" class="tsd-kind-icon">load</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_resources_resourcemanager_.resourcemanager.html#loading" class="tsd-kind-icon">loading</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_resources_configurationmanager_.configurationmanager.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_resources_configurationmanager_.configurationmanager.html#assign" class="tsd-kind-icon">assign</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_resources_configurationmanager_.configurationmanager.html#attach" class="tsd-kind-icon">attach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_resources_configurationmanager_.configurationmanager.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_resources_configurationmanager_.configurationmanager.html#load" class="tsd-kind-icon">load</a></li>
 							</ul>
 						</section>
 					</div>
@@ -117,31 +116,39 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Resource<wbr>Manager<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_resources_resourcemanager_.resourcemanager.html" class="tsd-signature-type">ResourceManager</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Configuration<wbr>Manager<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_resources_configurationmanager_.configurationmanager.html" class="tsd-signature-type">ConfigurationManager</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="_resources_resourcemanager_.resourcemanager.html">ResourceManager</a>.<a href="_resources_resourcemanager_.resourcemanager.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ResourceManager.ts#L6">Resources/ResourceManager.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ConfigurationManager.ts#L6">Resources/ConfigurationManager.ts:6</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_resources_resourcemanager_.resourcemanager.html" class="tsd-signature-type">ResourceManager</a></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_resources_configurationmanager_.configurationmanager.html" class="tsd-signature-type">ConfigurationManager</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="preload" class="tsd-anchor"></a>
 					<h3>preload</h3>
 					<div class="tsd-signature tsd-kind-icon">preload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_resources_resourcemanager_.resourcemanager.html">ResourceManager</a>.<a href="_resources_resourcemanager_.resourcemanager.html#preload">preload</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ResourceManager.ts#L6">Resources/ResourceManager.ts:6</a></li>
 						</ul>
@@ -168,28 +175,50 @@
 						</ul>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="sets" class="tsd-anchor"></a>
 					<h3>sets</h3>
 					<div class="tsd-signature tsd-kind-icon">sets<span class="tsd-signature-symbol">:</span> <a href="_resources_resourceset_.resourceset.html" class="tsd-signature-type">ResourceSet</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_resources_resourcemanager_.resourcemanager.html">ResourceManager</a>.<a href="_resources_resourcemanager_.resourcemanager.html#sets">sets</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ResourceManager.ts#L5">Resources/ResourceManager.ts:5</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="target" class="tsd-anchor"></a>
+					<h3>target</h3>
+					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ConfigurationManager.ts#L6">Resources/ConfigurationManager.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="url" class="tsd-anchor"></a>
+					<h3>url</h3>
+					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ConfigurationManager.ts#L5">Resources/ConfigurationManager.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="add" class="tsd-anchor"></a>
 					<h3>add</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>sets<span class="tsd-signature-symbol">: </span><a href="_resources_resourceset_.resourceset.html" class="tsd-signature-type">ResourceSet</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_resources_resourcemanager_.resourcemanager.html">ResourceManager</a>.<a href="_resources_resourcemanager_.resourcemanager.html#add">add</a></p>
 								<ul>
 									<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ResourceManager.ts#L12">Resources/ResourceManager.ts:12</a></li>
 								</ul>
@@ -204,15 +233,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="assign" class="tsd-anchor"></a>
 					<h3>assign</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">assign<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_resources_resourcemanager_.resourcemanager.html">ResourceManager</a>.<a href="_resources_resourcemanager_.resourcemanager.html#assign">assign</a></p>
 								<ul>
 									<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ResourceManager.ts#L33">Resources/ResourceManager.ts:33</a></li>
 								</ul>
@@ -228,14 +258,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="attach" class="tsd-anchor"></a>
+					<h3>attach</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">attach<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ConfigurationManager.ts#L21">Resources/ConfigurationManager.ts:21</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="clear" class="tsd-anchor"></a>
 					<h3>clear</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_resources_resourcemanager_.resourcemanager.html">ResourceManager</a>.<a href="_resources_resourcemanager_.resourcemanager.html#clear">clear</a></p>
 								<ul>
 									<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ResourceManager.ts#L16">Resources/ResourceManager.ts:16</a></li>
 								</ul>
@@ -244,17 +298,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="load" class="tsd-anchor"></a>
 					<h3>load</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span>loaded<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="_resources_resourcemanager_.resourcemanager.html">ResourceManager</a>.<a href="_resources_resourcemanager_.resourcemanager.html#load">load</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ResourceManager.ts#L21">Resources/ResourceManager.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ConfigurationManager.ts#L14">Resources/ConfigurationManager.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -264,29 +319,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="loading" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> loading</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">loading<span class="tsd-signature-symbol">(</span>loaded<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/experdot/general-engine/blob/b0b6da1/src/scripts/Engine/Resources/ResourceManager.ts#L45">Resources/ResourceManager.ts:45</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> loaded: <span class="tsd-signature-type">Function</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -299,7 +331,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_resources_resourcemanager_.html">"<wbr>Resources/<wbr>Resource<wbr>Manager"</a>
+						<a href="../modules/_resources_configurationmanager_.html">"<wbr>Resources/<wbr>Configuration<wbr>Manager"</a>
 					</li>
 				</ul>
 			</nav>
@@ -308,31 +340,37 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_resources_resourcemanager_.resourcemanager.html" class="tsd-kind-icon">Resource<wbr>Manager</a>
+						<a href="_resources_configurationmanager_.configurationmanager.html" class="tsd-kind-icon">Configuration<wbr>Manager</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_resources_resourcemanager_.resourcemanager.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_resources_configurationmanager_.configurationmanager.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_resources_configurationmanager_.configurationmanager.html#preload" class="tsd-kind-icon">preload</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_resources_configurationmanager_.configurationmanager.html#sets" class="tsd-kind-icon">sets</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_resources_resourcemanager_.resourcemanager.html#preload" class="tsd-kind-icon">preload</a>
+								<a href="_resources_configurationmanager_.configurationmanager.html#target" class="tsd-kind-icon">target</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_resources_resourcemanager_.resourcemanager.html#sets" class="tsd-kind-icon">sets</a>
+								<a href="_resources_configurationmanager_.configurationmanager.html#url" class="tsd-kind-icon">url</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_resources_configurationmanager_.configurationmanager.html#add" class="tsd-kind-icon">add</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_resources_configurationmanager_.configurationmanager.html#assign" class="tsd-kind-icon">assign</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_resources_resourcemanager_.resourcemanager.html#add" class="tsd-kind-icon">add</a>
+								<a href="_resources_configurationmanager_.configurationmanager.html#attach" class="tsd-kind-icon">attach</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_resources_resourcemanager_.resourcemanager.html#assign" class="tsd-kind-icon">assign</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_resources_configurationmanager_.configurationmanager.html#clear" class="tsd-kind-icon">clear</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_resources_resourcemanager_.resourcemanager.html#clear" class="tsd-kind-icon">clear</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_resources_resourcemanager_.resourcemanager.html#load" class="tsd-kind-icon">load</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_resources_resourcemanager_.resourcemanager.html#loading" class="tsd-kind-icon">loading</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_resources_configurationmanager_.configurationmanager.html#load" class="tsd-kind-icon">load</a>
 							</li>
 						</ul>
 					</li>
